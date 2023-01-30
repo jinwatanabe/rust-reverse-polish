@@ -1,0 +1,10 @@
+version: "3"
+services:
+  rust:
+    build: .
+    container_name: rust-rpn
+    tty: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
